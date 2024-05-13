@@ -1,3 +1,5 @@
+from dotenv import load_dotenv, find_dotenv
+import os
 INVARIANT_STYLE = "VERISOL"
 #INVARIANT_STYLE = "DAIKON"
 
@@ -16,6 +18,9 @@ ENABLE_INV_REDUCTION = False
 
 # OPTION FOR Matching State Variables with Dynamic Storage Value Update
 ENABLE_READ_MODEL_FLATTENVALUE = True
+load_dotenv()
 
-ETHERSCAN_API_KEY="SDI5QEC2UAY1CX4C1VPXC4WE9HIMH2SF1C"
-QUICKNODE_API_KEY="661a68de75cca81104455a0cb1b244812d574fef"
+
+ETHERSCAN_API_KEY=os.environ.get("ETHERSCAN_API_KEY")
+QUICKNODE_API_KEY=os.environ.get("QUICKNODE_API_KEY")
+
