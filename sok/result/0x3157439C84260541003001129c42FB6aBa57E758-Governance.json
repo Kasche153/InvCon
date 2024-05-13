@@ -1,0 +1,684 @@
+{
+    "variables": [
+        {
+            "contractName": "Governance",
+            "varName": "votingToken",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": "0x6e36556b3ee5aa28def2a8ec3dae30ec2b208739",
+            "varSlot": 0,
+            "varOffset": 0
+        },
+        {
+            "contractName": "Governance",
+            "varName": "proposalCount",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": 2,
+            "varSlot": 1,
+            "varOffset": 0
+        },
+        {
+            "contractName": "Governance",
+            "varName": "proposals",
+            "varType": "mapping(uint256 => Governance.Proposal)",
+            "varBytes": 32,
+            "varValue": {
+                "1": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "Governance.Proposal",
+                    "varBytes": 181,
+                    "varValue": [
+                        {
+                            "contractName": "Governance",
+                            "varName": "id",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": 1,
+                            "varSlot": 105409183525425523237923285454331214386340807945685310246717412709691342439136,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "Governance",
+                            "varName": "proposer",
+                            "varType": "address",
+                            "varBytes": 20,
+                            "varValue": "0x2cb037bd6b7fbd78f04756c99b7996f430c58172",
+                            "varSlot": 105409183525425523237923285454331214386340807945685310246717412709691342439137,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "Governance",
+                            "varName": "startTime",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": 1616320207,
+                            "varSlot": 105409183525425523237923285454331214386340807945685310246717412709691342439138,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "Governance",
+                            "varName": "forVotes",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": 6913123078898791424744,
+                            "varSlot": 105409183525425523237923285454331214386340807945685310246717412709691342439139,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "Governance",
+                            "varName": "againstVotes",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 105409183525425523237923285454331214386340807945685310246717412709691342439140,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "Governance",
+                            "varName": "txHash",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": "0x91b76f008a88414d265ad0c0b4161d4abad78837db5a017f6a38982fb3afa542",
+                            "varSlot": 105409183525425523237923285454331214386340807945685310246717412709691342439141,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "Governance",
+                            "varName": "executed",
+                            "varType": "bool",
+                            "varBytes": 1,
+                            "varValue": true,
+                            "varSlot": 105409183525425523237923285454331214386340807945685310246717412709691342439142,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": 105409183525425523237923285454331214386340807945685310246717412709691342439136,
+                    "varOffset": null
+                },
+                "2": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "Governance.Proposal",
+                    "varBytes": 181,
+                    "varValue": [
+                        {
+                            "contractName": "Governance",
+                            "varName": "id",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": 2,
+                            "varSlot": 46856049987324987851654180578118835177937932377897439695260177228387632849548,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "Governance",
+                            "varName": "proposer",
+                            "varType": "address",
+                            "varBytes": 20,
+                            "varValue": "0xdcc8a38a3a1f4ef4d0b4984dcbb31627d0952c28",
+                            "varSlot": 46856049987324987851654180578118835177937932377897439695260177228387632849549,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "Governance",
+                            "varName": "startTime",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": 1644461945,
+                            "varSlot": 46856049987324987851654180578118835177937932377897439695260177228387632849550,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "Governance",
+                            "varName": "forVotes",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 46856049987324987851654180578118835177937932377897439695260177228387632849551,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "Governance",
+                            "varName": "againstVotes",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 46856049987324987851654180578118835177937932377897439695260177228387632849552,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "Governance",
+                            "varName": "txHash",
+                            "varType": "bytes32",
+                            "varBytes": 32,
+                            "varValue": "0xa28ed7c29a092054a52519ceff3f5773e989e9b5e6f077d8e40504ffad5725e0",
+                            "varSlot": 46856049987324987851654180578118835177937932377897439695260177228387632849553,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "Governance",
+                            "varName": "executed",
+                            "varType": "bool",
+                            "varBytes": 1,
+                            "varValue": null,
+                            "varSlot": 46856049987324987851654180578118835177937932377897439695260177228387632849554,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": 46856049987324987851654180578118835177937932377897439695260177228387632849548,
+                    "varOffset": null
+                }
+            },
+            "varSlot": 2,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "uint256",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "Governance.Proposal",
+                "varBytes": 181,
+                "varValue": [
+                    {
+                        "contractName": "Governance",
+                        "varName": "id",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 0,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "Governance",
+                        "varName": "proposer",
+                        "varType": "address",
+                        "varBytes": 20,
+                        "varValue": null,
+                        "varSlot": 1,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "Governance",
+                        "varName": "startTime",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 2,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "Governance",
+                        "varName": "forVotes",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 3,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "Governance",
+                        "varName": "againstVotes",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 4,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "Governance",
+                        "varName": "txHash",
+                        "varType": "bytes32",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 5,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "Governance",
+                        "varName": "executed",
+                        "varType": "bool",
+                        "varBytes": 1,
+                        "varValue": null,
+                        "varSlot": 6,
+                        "varOffset": 0
+                    }
+                ],
+                "varSlot": null,
+                "varOffset": null
+            }
+        },
+        {
+            "contractName": "Governance",
+            "varName": "receipts",
+            "varType": "mapping(uint256 => mapping(address => Governance.Receipt))",
+            "varBytes": 32,
+            "varValue": {
+                "1": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "mapping(address => Governance.Receipt)",
+                    "varBytes": 32,
+                    "varValue": {
+                        "0x2cb037bd6b7fbd78f04756c99b7996f430c58172": {
+                            "contractName": null,
+                            "varName": null,
+                            "varType": "Governance.Receipt",
+                            "varBytes": 34,
+                            "varValue": [
+                                {
+                                    "contractName": "Governance",
+                                    "varName": "hasVoted",
+                                    "varType": "bool",
+                                    "varBytes": 1,
+                                    "varValue": true,
+                                    "varSlot": 84890931864495257503571610275165957890317735181832117103298894774417068360624,
+                                    "varOffset": 0
+                                },
+                                {
+                                    "contractName": "Governance",
+                                    "varName": "support",
+                                    "varType": "bool",
+                                    "varBytes": 1,
+                                    "varValue": true,
+                                    "varSlot": 84890931864495257503571610275165957890317735181832117103298894774417068360624,
+                                    "varOffset": 1
+                                },
+                                {
+                                    "contractName": "Governance",
+                                    "varName": "votes",
+                                    "varType": "uint256",
+                                    "varBytes": 32,
+                                    "varValue": 100613678321686055863,
+                                    "varSlot": 84890931864495257503571610275165957890317735181832117103298894774417068360625,
+                                    "varOffset": 0
+                                }
+                            ],
+                            "varSlot": 84890931864495257503571610275165957890317735181832117103298894774417068360624,
+                            "varOffset": null
+                        },
+                        "0x7aa9d09a6d283f5b5ec724d7dd8fa70673553183": {
+                            "contractName": null,
+                            "varName": null,
+                            "varType": "Governance.Receipt",
+                            "varBytes": 34,
+                            "varValue": [
+                                {
+                                    "contractName": "Governance",
+                                    "varName": "hasVoted",
+                                    "varType": "bool",
+                                    "varBytes": 1,
+                                    "varValue": true,
+                                    "varSlot": 82477662118146666876621413151236147980520580702737682222237611785605257422623,
+                                    "varOffset": 0
+                                },
+                                {
+                                    "contractName": "Governance",
+                                    "varName": "support",
+                                    "varType": "bool",
+                                    "varBytes": 1,
+                                    "varValue": true,
+                                    "varSlot": 82477662118146666876621413151236147980520580702737682222237611785605257422623,
+                                    "varOffset": 1
+                                },
+                                {
+                                    "contractName": "Governance",
+                                    "varName": "votes",
+                                    "varType": "uint256",
+                                    "varBytes": 32,
+                                    "varValue": 1256247297082638775836,
+                                    "varSlot": 82477662118146666876621413151236147980520580702737682222237611785605257422624,
+                                    "varOffset": 0
+                                }
+                            ],
+                            "varSlot": 82477662118146666876621413151236147980520580702737682222237611785605257422623,
+                            "varOffset": null
+                        },
+                        "0x87616fa850c87a78f307878f32d808dad8f4d401": {
+                            "contractName": null,
+                            "varName": null,
+                            "varType": "Governance.Receipt",
+                            "varBytes": 34,
+                            "varValue": [
+                                {
+                                    "contractName": "Governance",
+                                    "varName": "hasVoted",
+                                    "varType": "bool",
+                                    "varBytes": 1,
+                                    "varValue": true,
+                                    "varSlot": 55106698028240121196516884198259274138705293986385822024540153428532783325780,
+                                    "varOffset": 0
+                                },
+                                {
+                                    "contractName": "Governance",
+                                    "varName": "support",
+                                    "varType": "bool",
+                                    "varBytes": 1,
+                                    "varValue": true,
+                                    "varSlot": 55106698028240121196516884198259274138705293986385822024540153428532783325780,
+                                    "varOffset": 1
+                                },
+                                {
+                                    "contractName": "Governance",
+                                    "varName": "votes",
+                                    "varType": "uint256",
+                                    "varBytes": 32,
+                                    "varValue": 4573282561639579090439,
+                                    "varSlot": 55106698028240121196516884198259274138705293986385822024540153428532783325781,
+                                    "varOffset": 0
+                                }
+                            ],
+                            "varSlot": 55106698028240121196516884198259274138705293986385822024540153428532783325780,
+                            "varOffset": null
+                        },
+                        "0xe75b59681e9edb918d0ca4e773c788a3df79bf51": {
+                            "contractName": null,
+                            "varName": null,
+                            "varType": "Governance.Receipt",
+                            "varBytes": 34,
+                            "varValue": [
+                                {
+                                    "contractName": "Governance",
+                                    "varName": "hasVoted",
+                                    "varType": "bool",
+                                    "varBytes": 1,
+                                    "varValue": true,
+                                    "varSlot": 66017842925397440084756099115460806847658256936343371558946313503847798371818,
+                                    "varOffset": 0
+                                },
+                                {
+                                    "contractName": "Governance",
+                                    "varName": "support",
+                                    "varType": "bool",
+                                    "varBytes": 1,
+                                    "varValue": true,
+                                    "varSlot": 66017842925397440084756099115460806847658256936343371558946313503847798371818,
+                                    "varOffset": 1
+                                },
+                                {
+                                    "contractName": "Governance",
+                                    "varName": "votes",
+                                    "varType": "uint256",
+                                    "varBytes": 32,
+                                    "varValue": 982979541854887502606,
+                                    "varSlot": 66017842925397440084756099115460806847658256936343371558946313503847798371819,
+                                    "varOffset": 0
+                                }
+                            ],
+                            "varSlot": 66017842925397440084756099115460806847658256936343371558946313503847798371818,
+                            "varOffset": null
+                        }
+                    },
+                    "varSlot": 72984518589826227531578991903372844090998219903258077796093728159832249402700,
+                    "varOffset": null,
+                    "key_var_type": {
+                        "contractName": null,
+                        "varName": null,
+                        "varType": "address",
+                        "varBytes": 20,
+                        "varValue": null,
+                        "varSlot": null,
+                        "varOffset": null
+                    },
+                    "val_var_type": {
+                        "contractName": null,
+                        "varName": null,
+                        "varType": "Governance.Receipt",
+                        "varBytes": 34,
+                        "varValue": [
+                            {
+                                "contractName": "Governance",
+                                "varName": "hasVoted",
+                                "varType": "bool",
+                                "varBytes": 1,
+                                "varValue": null,
+                                "varSlot": 0,
+                                "varOffset": 0
+                            },
+                            {
+                                "contractName": "Governance",
+                                "varName": "support",
+                                "varType": "bool",
+                                "varBytes": 1,
+                                "varValue": null,
+                                "varSlot": 0,
+                                "varOffset": 1
+                            },
+                            {
+                                "contractName": "Governance",
+                                "varName": "votes",
+                                "varType": "uint256",
+                                "varBytes": 32,
+                                "varValue": null,
+                                "varSlot": 1,
+                                "varOffset": 0
+                            }
+                        ],
+                        "varSlot": null,
+                        "varOffset": null
+                    }
+                }
+            },
+            "varSlot": 3,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "uint256",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "mapping(address => Governance.Receipt)",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null,
+                "key_var_type": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "address",
+                    "varBytes": 20,
+                    "varValue": null,
+                    "varSlot": null,
+                    "varOffset": null
+                },
+                "val_var_type": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "Governance.Receipt",
+                    "varBytes": 34,
+                    "varValue": [
+                        {
+                            "contractName": "Governance",
+                            "varName": "hasVoted",
+                            "varType": "bool",
+                            "varBytes": 1,
+                            "varValue": null,
+                            "varSlot": 0,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "Governance",
+                            "varName": "support",
+                            "varType": "bool",
+                            "varBytes": 1,
+                            "varValue": null,
+                            "varSlot": 0,
+                            "varOffset": 1
+                        },
+                        {
+                            "contractName": "Governance",
+                            "varName": "votes",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 1,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": null,
+                    "varOffset": null
+                }
+            }
+        },
+        {
+            "contractName": "Governance",
+            "varName": "voteLock",
+            "varType": "mapping(address => uint256)",
+            "varBytes": 32,
+            "varValue": {
+                "0x2cb037bd6b7fbd78f04756c99b7996f430c58172": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 1616406592,
+                    "varSlot": 54205970879276260228299959527623220966932225238830795301588067931871986674013,
+                    "varOffset": 0
+                },
+                "0x7aa9d09a6d283f5b5ec724d7dd8fa70673553183": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 1616429911,
+                    "varSlot": 29480389247998271168139661223519958466622869393584215193815594845917282658466,
+                    "varOffset": 0
+                },
+                "0x87616fa850c87a78f307878f32d808dad8f4d401": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 1616440391,
+                    "varSlot": 1806022208747535980390335084779534875758036779833896502687111324086741247923,
+                    "varOffset": 0
+                },
+                "0xe75b59681e9edb918d0ca4e773c788a3df79bf51": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 1616488890,
+                    "varSlot": 110931094338925951529615253727250926000722183939305314051617362428679793824413,
+                    "varOffset": 0
+                },
+                "0xdcc8a38a3a1f4ef4d0b4984dcbb31627d0952c28": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 1644547945,
+                    "varSlot": 84617395041033808272686899909876950407895814722254944429615224462393053500144,
+                    "varOffset": 0
+                }
+            },
+            "varSlot": 4,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "address",
+                "varBytes": 20,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "uint256",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            }
+        },
+        {
+            "contractName": "Governance",
+            "varName": "balanceOf",
+            "varType": "mapping(address => uint256)",
+            "varBytes": 32,
+            "varValue": {
+                "0x2cb037bd6b7fbd78f04756c99b7996f430c58172": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 0,
+                    "varSlot": 62862918252661382060579936232447953488674991047625768256400963114413877415863,
+                    "varOffset": 0
+                },
+                "0x7aa9d09a6d283f5b5ec724d7dd8fa70673553183": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 0,
+                    "varSlot": 35963109546589201726204815883446089978338732561336743078140819109228292936205,
+                    "varOffset": 0
+                },
+                "0x87616fa850c87a78f307878f32d808dad8f4d401": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 0,
+                    "varSlot": 78865179658763938273816130696027582827706748792401144162495640469691472331661,
+                    "varOffset": 0
+                },
+                "0xe75b59681e9edb918d0ca4e773c788a3df79bf51": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 0,
+                    "varSlot": 14295248927557515910191818416966763836904821116794588851761013931041896771902,
+                    "varOffset": 0
+                },
+                "0xdcc8a38a3a1f4ef4d0b4984dcbb31627d0952c28": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": 101529401443281484977,
+                    "varSlot": 78758597450155371823507557999924761703247261685824441399437230686374782119187,
+                    "varOffset": 0
+                }
+            },
+            "varSlot": 5,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "address",
+                "varBytes": 20,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "uint256",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            }
+        }
+    ]
+}

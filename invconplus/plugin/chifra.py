@@ -41,11 +41,6 @@ def fetchBatchTransaction(tx_ids: list):
         except:
             continue
 
-    # sys.argv =  cmds 
-    # result = run()
-    # while result is None or "data" not in result or len(result["data"]) == 0:
-    #     result = run()
-    #     sleep(1)
     new_results = list()
     for tx_id in tx_ids:
         new_result = list()
@@ -71,11 +66,6 @@ def fetchTransaction(block, txid):
         result =  json.loads(out.decode())
         break 
 
-    # cmds =  ["chifra", "traces", "{0}.{1}".format(block, txid), "-o", "-a"]
-    # sys.argv =  cmds
-    # result = run()
-    # while result is None or "data" not in result or len(result["data"]) == 0:
-    #     result = run()
 
     return result["data"]
 
@@ -96,17 +86,34 @@ def fetchTransactionByHash(txhash):
         break 
     return result["data"]
 
-def fetchTransactionsForAccount(address, maxCount=10000, hack_tx = None,  cached_transactions=[]):
+def fetchTransactionsForAccount(address, maxCount=10000, start_tx = None, hack_tx = None,  cached_transactions=[]):
     global sys 
     maxBlockNumber = None 
+    minBlockNumber = None
     if hack_tx is not None:
         assert hack_tx.startswith("0x"), f"{hack_tx} does not start with 0x"
         transaction = fetchTransactionByHash(hack_tx)
-        # print(transaction)
+
         maxBlockNumber = transaction[0]["blockNumber"]
 
+    if start_tx is not None:
+        assert start_tx.startswith("0x"), f"{hack_tx} does not start with 0x"
+        transaction = fetchTransactionByHash(start_tx)
+        minBlockNumber = transaction[0]["blockNumber"]    
+
     transactions: list = cached_transactions
-    if maxBlockNumber is None:
+    print("This is the min block and max block", minBlockNumber, maxBlockNumber)
+    if maxBlockNumber is not None and minBlockNumber is not None:
+        p = subprocess.Popen(["chifra", "list", address, "--fmt", "json","-F", str(minBlockNumber), "-L", str(maxBlockNumber)], stdout=subprocess.PIPE)
+        out, err = p.communicate()
+        if err:
+            logging.error(err)
+            assert False
+        result =  json.loads(out.decode())
+        batch_size = 25
+        result = list(result["data"])
+        maxCount = len(result)
+    elif  maxBlockNumber is None:
         p = subprocess.Popen(["chifra", "list", address, "--fmt", "json", "-e", str(maxCount)], stdout=subprocess.PIPE)
         out, err = p.communicate()
         if err:

@@ -10,9 +10,9 @@ class Reader:
     abi: List 
     transactions: List
     txCursor: int 
-    def __init__(self, contract_address, maxCount, hack_tx) -> None:
+    def __init__(self, contract_address, maxCount, start_tx ,hack_tx) -> None:
         self.contract_address = contract_address 
-        bdProvider = BlockchainDataProvider(params = dict(contract_address=contract_address), maxCount=maxCount, hack_tx=hack_tx)
+        bdProvider = BlockchainDataProvider(params = dict(contract_address=contract_address), maxCount=maxCount, start_tx=start_tx , hack_tx=hack_tx)
         self.contractName, self.storageLayout, self.abi, self.constants, self.transactions = bdProvider.read()
         self.txCursor = 0 
     

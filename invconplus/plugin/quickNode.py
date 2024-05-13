@@ -10,7 +10,7 @@ def fetchAllRuntimeInformation(tx_hash):
     while count < maxTimes:
         count += 1
         try:
-            url = f'https://methodical-orbital-grass.quiknode.pro/{invconst.QUICKNODE_API_KEY}/'
+            url = f'https://white-flashy-research.quiknode.pro/{invconst.QUICKNODE_API_KEY}/'
             myobj = {"method":"trace_replayTransaction","params":[tx_hash,["vmTrace", "trace", "stateDiff"]],"id":1,"jsonrpc":"2.0"}
             x = requests.post(url, json = myobj)
             data = json.loads(x.text)
@@ -27,7 +27,7 @@ def fetchVmTrace(tx_hash):
     while count < maxTimes:
         count += 1
         try:
-            url = f'https://methodical-orbital-grass.quiknode.pro/{invconst.QUICKNODE_API_KEY}/'
+            url = f'https://white-flashy-research.quiknode.pro/{invconst.QUICKNODE_API_KEY}/'
             myobj = {"method":"trace_replayTransaction","params":[tx_hash,["vmTrace"]],"id":1,"jsonrpc":"2.0"}
             x = requests.post(url, json = myobj)
             data = json.loads(x.text)
@@ -47,7 +47,7 @@ def fetchStateDiff(tx_hash):
     while count < maxTimes:
         count += 1
         try:
-            url = f'https://methodical-orbital-grass.quiknode.pro/{invconst.QUICKNODE_API_KEY}/'
+            url = f'https://white-flashy-research.quiknode.pro/{invconst.QUICKNODE_API_KEY}/'
             myobj = {"method":"trace_replayTransaction","params":[tx_hash,["stateDiff"]],"id":1,"jsonrpc":"2.0"}
             x = requests.post(url, json = myobj)
             data = json.loads(x.text)

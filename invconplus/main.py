@@ -9,7 +9,7 @@ from invconplus.ppt import PptTopLevel
 from invconplus.trace.traceslice import TraceSlice, Trace, covertTx2Event, default
 import invconplus.const as invconst 
 
-def main(address, configuration=None, maxCount=500, minSupport=50, training_ratio=None, hack_tx = None):
+def main(address, configuration=None, maxCount=500, minSupport=50, training_ratio=None, hack_tx = None, start_tx= None):
     logging.RootLogger.root.handlers = []
     handlers = [logging.FileHandler(os.path.join(invconst.RESULT_DIR, '../invcon.log'), 'w', encoding='utf-8'),
                 logging.StreamHandler()]
@@ -21,7 +21,7 @@ def main(address, configuration=None, maxCount=500, minSupport=50, training_rati
     logging.warning(address)
     statistics = dict()
     start_time = time.time()
-    txreplayer = TransactionReplayer(contract_address=address, maxCount= maxCount, hack_tx = hack_tx)
+    txreplayer = TransactionReplayer(contract_address=address, maxCount= maxCount, start_tx = start_tx , hack_tx = hack_tx)
     invcon = InvConPlus(address, txreplayer.contractName, txreplayer.getDeclModel(), txreplayer.getABISpec())
     invcon.initializePpts()
 
@@ -133,6 +133,9 @@ if __name__ == "__main__":
     parser.add_argument('--hack_tx', type=str, required=False, default=None, 
                         help='the hack tx to be used for testing')
     
+    parser.add_argument('--start_tx', type=str, required=False, default=None, 
+                        help='the hack tx to be used for testing')
+    
     parser.add_argument('--maxCount', type=int, required=False, default=500, 
                         help='the number of transactions used,\
                               (default, 500)')
@@ -147,9 +150,9 @@ if __name__ == "__main__":
 
     if args.quickNode_api_key is not None:
         invconst.QUICKNODE_API_KEY = args.quickNode_api_key
-    
+     
     if args.etherscan_api_key is not None:
         invconst.ETHERSCAN_API_KEY = args.etherscan_api_key
     
-    main(args.address, args.configuration, args.maxCount, args.minSupport, args.training_ratio, args.hack_tx)
+    main(args.address, args.configuration, args.maxCount, args.minSupport, args.training_ratio, args.hack_tx, args.start_tx)
     

@@ -16,9 +16,9 @@ class TransactionReplayer:
     contractName: str 
     myreader: Reader 
     modelReader: StorageModelReader
-    def __init__(self, contract_address, maxCount, hack_tx) -> None:
+    def __init__(self, contract_address, maxCount, start_tx ,hack_tx) -> None:
         self.contract_address = contract_address.lower()
-        self.myreader = Reader(contract_address=contract_address, maxCount=maxCount, hack_tx=hack_tx)
+        self.myreader = Reader(contract_address=contract_address, maxCount=maxCount, start_tx=start_tx, hack_tx=hack_tx )
         self.modelReader = StorageModelReader(self.myreader.storageLayout)
         self.contractName =  self.myreader.contractName 
     

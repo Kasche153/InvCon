@@ -7,9 +7,10 @@ USDT_ADDRESS = "0xdAC17F958D2ee523a2206206994597C13D831ec7"
 CONTRACT_ADDRESS="contract_address"
 
 class TransactionProvider(Provider):
-    def __init__(self, params, maxCount=None, hack_tx = None, cached_transactions = []) -> None:
+    def __init__(self, params, maxCount=None, start_tx = None, hack_tx = None, cached_transactions = []) -> None:
         super().__init__(params=params)
         self.maxCount = maxCount
+        self.start_tx = start_tx
         self.cached_transactions = cached_transactions
         self.hack_tx = hack_tx 
 
@@ -21,7 +22,8 @@ class TransactionProvider(Provider):
         #     result =  fetchTransactionsForUSDT(self.params[CONTRACT_ADDRESS], self.maxCount, self.cached_record_number)
         # else:
         #     result = fetchTransactionsForAccount(self.params[CONTRACT_ADDRESS], self.maxCount, self.cached_record_number)
-        result = fetchTransactionsForAccount(self.params[CONTRACT_ADDRESS], self.maxCount, self.hack_tx, self.cached_transactions)
+        
+        result = fetchTransactionsForAccount(address=self.params[CONTRACT_ADDRESS], maxCount=self.maxCount, start_tx= self.start_tx, hack_tx=self.hack_tx,cached_transactions= self.cached_transactions)
         return result
 
 if __name__ == "__main__":
